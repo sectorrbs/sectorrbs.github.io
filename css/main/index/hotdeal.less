@@ -1,0 +1,103 @@
+// main:../../style.less
+
+.hotdeal {
+    &__inner {
+        height: 823px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-template-areas:
+            'r1 r2'
+            'r1 r4'
+            'r3 r4'
+    }
+
+    &__item {
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.03);
+
+        }
+
+        &:nth-child(1) {
+            background-image: url(../images/hotdeal_1.png);
+            grid-area: r1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../images/hotdeal_2.png);
+            grid-area: r2;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        &:nth-child(3) {
+            background-image: url(../images/hotdeal_3.png);
+            grid-area: r3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-child(4) {
+            background-image: url(../images/hotdeal_4.png);
+            grid-area: r4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    }
+
+    &__content {
+        height: 82px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 26px;
+    }
+
+
+
+    &__description {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+
+    &__title {
+        font-size: 30px;
+        color: #f16d7f;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+}
+
+.item--man {
+    width: 175px;
+}
+
+.item--women {
+    width: 162px;
+
+}
+
+.item--accesories {
+    width: 225px;
+}
+
+.item--kids {
+    width: 180px;
+}

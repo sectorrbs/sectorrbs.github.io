@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/plagins/reset.css">
+    <link rel="stylesheet" href="css/plagins/normalize.css">
+    <link rel="stylesheet" href="css/plagins/slick.css">
+    <link rel="stylesheet" href="css/plagins/animate.css">
+    <link rel="stylesheet" href="css/plagins/jquery.fancybox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9753e5641.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header header__inner">
+
+        <div class="container header__wrapper">
+
+            <a class="site-logo" href="#"><img src="images/logo.svg" alt="logo" class="logo">
+                <span class="logo-text">BRAN<span>D</span></span></a>
+
+            <form class="form">
+
+                <details>
+                    <summary class="form__summary">Browse</summary>
+
+                    <div class="browse__list">
+                        <p class="form__subtitle">women</p>
+                        <ul class="form__content">
+                            <li class="form__list"><a href="#" class="form__link">Dresses</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Tops</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweaters/Knits</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Jackets/Coats</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Blazers</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Denim</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Leggings/Pants</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Skirts/Shorts</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Accessories</a></li>
+                        </ul>
+
+                        <p class="form__subtitle">men</p>
+                        <ul class="form__content">
+                            <li class="form__list"><a href="#" class="form__link">Tees/Tank tops</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Shirts/Polos</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweaters</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweatshirts/Hoodies</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Blazers</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Jackets/vests</a></li>
+                        </ul>
+                    </div>
+
+                </details>
+
+                <input type="email" class="form__input" placeholder="Search for Item...">
+
+                <a href="#" class="form__search-link"><i class="form__search-icon fa fa-search"></i></a>
+
+            </form>
+
+            <div class="header__btn">
+
+                <button class="header__btn-link"><img src="images/wagon.svg" alt="btn-icon"
+                        class="header__btn-icon"></button>
+
+                <details>
+                    <summary class="btn btn-summary">
+                        My Account
+                    </summary>
+                    <div class="btn-content">content</div>
+                </details>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="menu__btn"><span></span></div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link">home</a>
+        <a href="product.html" class="nav__link nav__megamenue-open">man</a>
+        <a href="#" class="nav__link nav__link-checkout--active">women</a>
+        <a href="shopping.html" class="nav__link">kids</a>
+        <a href="single-page.html" class="nav__link">accoseriese</a>
+        <a href="#" class="nav__link">featured</a>
+        <a href="product.html" class="nav__link">hot deals</a>
+        <div class="nav__megamenue">
+            <div class="nav__megamenue-left">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Blazers</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Denim</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Leggings/Pants</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Skirts/Shorts</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="nav__megamenue-center">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                </ul>
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                </ul>
+            </div>
+            <div class="nav__megamenue-right">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                </ul>
+                <img src="images/megamenue_img.png" alt="megamenue-img" class="nav__megamenue-img">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </nav>
+
+    <section class="arrivals">
+        <div class="container">
+            <div class="arrivals__inner">
+                <p class="arrivals__title">New Arrivals</p>
+                <div class="arrivals__crumbs">
+                    <a href="#" class="arrivals__crumbs-link">Home /</a>
+                    <a href="#" class="arrivals__crumbs-link">Men /</a>
+                    <span class="arrivals__crumbs-active">New Arrivals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="accordeon">
+            <div class="container">
+
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="shipping-adress" checked>
+                    <label for="shipping-adress" class="accordeon__title">
+                        <p class="accordeon__title-name">01. Shipping Adress</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="billing-info">
+                    <label for="billing-info" class="accordeon__title">
+                        <p class="accordeon__title-name">02. BILLING INFORMATION</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="shipping-info">
+                    <label for="shipping-info" class="accordeon__title">
+                        <p class="accordeon__title-name">03. SHIPPING INFORMATION</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="shipping-method">
+                    <label for="shipping-method" class="accordeon__title">
+                        <p class="accordeon__title-name">04. SHIPPING METHOD</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="payment-method">
+                    <label for="payment-method" class="accordeon__title">
+                        <p class="accordeon__title-name">05. PAYMENT METHOD</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="accordeon__item">
+                    <input type="checkbox" class="accordeon__check" id="order-review">
+                    <label for="order-review" class="accordeon__title">
+                        <p class="accordeon__title-name">06. ORDER REVIEW</p>
+                    </label>
+                    <div class="accordeon__content">
+
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Check as a guest or register</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio">
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">checkout as
+                                    guest</span>
+                            </label>
+                            <label class="accordeon__radio-box"><input type="radio" class="accordeon__radio"
+                                    name="accordeon-radio" checked>
+                                <span class="accordeon__radio-style"></span>
+                                <span class="accordeon__radio-name">register</span></label>
+
+
+                            <p class="accordeon__content-title">register and save time!</p>
+                            <p class="accordeon__content-subtitle">Register with us for future convenience</p>
+
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Fast and
+                                easy checkout</a>
+                            <a href="#" class="accordeon__content-link"><i class="fa fa-angle-double-right"></i>Easy
+                                access to your order history and status</a>
+
+                            <button class="accordeon__btn">Continue</button>
+
+
+                        </form>
+                        <form class="accordeon__content-column">
+                            <p class="accordeon__content-title">Already registed?</p>
+                            <p class="accordeon__content-subtitle">Please log in below</p>
+                            <p class="accordeon__email-adress">EMAIL ADDRESS <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-pass">PASSWORD <span>*</span></p>
+                            <input type="text" class="accordeon__content-input">
+                            <p class="accordeon__content-note">* Required Fileds</p>
+                            <button class="accordeon__btn">Log in</button>
+                            <span class="accordeon__content-forgot-pass">Forgot Password ?</span>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="review review__inner">
+        <div class="review__wrapper">
+            <!-- <img src="images/review_bg.png" alt="review-bg" class="review__bg"> -->
+            <div class="container review__content">
+
+                <div class="review__slider">
+
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                </div>
+
+                <div class="review__form">
+
+                    <h3 class="review__form-title">Subscribe</h3>
+
+                    <p class="review__form-text">FOR OUR NEWLETTER AND PROMOTION</p>
+
+                    <form class="review__form-input">
+                        <input type="email" class="review__input" placeholder="Enter Your Email">
+                        <button class="review__subscribe">Subscribe</button>
+                    </form>
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+
+                    <a class="site-logo" href="#"><img src="images/logo.svg" alt="logo" class="logo">
+                        <span class="logo-text">BRAN<span>D</span></span>
+                    </a>
+
+                    <p class="footer__text">
+                        <span class="footer__description">Objectively transition extensive data rather than cross
+                            functional
+                            solutions.
+                            Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array
+                            of
+                            processes and cross-unit partnerships.</span> Efficiently plagiarize 24/365 action items and
+                        focused
+                        infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically
+                        optimize.
+                    </p>
+
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">COMPANY</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Home</a>
+                        <a href="#" class="footer__link">Shop</a>
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">How It Works</a>
+                        <a href="#" class="footer__link">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">INFORMATION</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Tearms & Condition</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">How to Buy</a>
+                        <a href="#" class="footer__link">How to Sell</a>
+                        <a href="#" class="footer__link">Promotion</a>
+                    </nav>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">SHOP CATEGORY</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Men</a>
+                        <a href="#" class="footer__link">Women</a>
+                        <a href="#" class="footer__link">Child</a>
+                        <a href="#" class="footer__link">Apparel</a>
+                        <a href="#" class="footer__link">Brows All</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__inner">
+                    <div class="footer__copy">© 2017 Brand All Rights Reserved.</div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="footer__social-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="footer__social-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="footer__social-pinterest"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="#" class="footer__social-google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

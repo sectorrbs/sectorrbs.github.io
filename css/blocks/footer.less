@@ -1,0 +1,121 @@
+// main:../style.less
+
+.footer {
+
+    &__inner {
+        display: flex;
+        margin-bottom: 89px;
+    }
+
+    &__content {
+        max-width: 427px;
+        min-width: 150px;
+        margin: 0 95px 0 0;
+    }
+
+    &__text {
+        margin-top: 29px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #898989;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &__item {
+        max-width: 154px;
+        margin-right: 72px;
+        white-space: nowrap;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #898989;
+        margin-bottom: 29px;
+        text-align: left;
+    }
+
+    &__item-title {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #f16d7f;
+        margin-bottom: 45px;
+    }
+}
+
+.copyright {
+    background-color: #e6e6e6;
+
+    &__inner {
+        height: 79px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+.footer__copy {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #7a7a7a;
+}
+
+.footer__social {
+    display: flex;
+
+    &-facebook,
+    &-twitter,
+    &-linkedin,
+    &-pinterest,
+    &-google {
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
+        font-family: FontAwesome;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #b2b2b2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &:hover {
+            background-color: @red;
+            color: white;
+            transition: .5s;
+        }
+
+        &:active {
+            opacity: 0.29;
+            background-color: #ffffff;
+            color: #b2b2b2;
+            opacity: 0.08;
+        }
+    }
+
+    &-twitter,
+    &-linkedin,
+    &-pinterest,
+    &-google {
+        margin-left: 8px;
+    }
+}

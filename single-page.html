@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Page</title>
+    <link rel="stylesheet" href="css/plagins/reset.css">
+    <link rel="stylesheet" href="css/plagins/normalize.css">
+    <link rel="stylesheet" href="css/plagins/slick.css">
+    <link rel="stylesheet" href="css/plagins/animate.css">
+    <link rel="stylesheet" href="css/plagins/jquery.fancybox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9753e5641.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header header__inner">
+
+        <div class="container header__wrapper">
+
+            <a class="site-logo" href="#"><img src="images/logo.svg" alt="logo" class="logo">
+                <span class="logo-text">BRAN<span>D</span></span></a>
+
+            <form class="form">
+
+                <details>
+                    <summary class="form__summary">Browse</summary>
+
+                    <div class="browse__list">
+                        <p class="form__subtitle">women</p>
+                        <ul class="form__content">
+                            <li class="form__list"><a href="#" class="form__link">Dresses</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Tops</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweaters/Knits</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Jackets/Coats</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Blazers</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Denim</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Leggings/Pants</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Skirts/Shorts</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Accessories</a></li>
+                        </ul>
+
+                        <p class="form__subtitle">men</p>
+                        <ul class="form__content">
+                            <li class="form__list"><a href="#" class="form__link">Tees/Tank tops</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Shirts/Polos</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweaters</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Sweatshirts/Hoodies</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Blazers</a></li>
+                            <li class="form__list"><a href="#" class="form__link">Jackets/vests</a></li>
+                        </ul>
+                    </div>
+
+                </details>
+
+                <input type="email" class="form__input" placeholder="Search for Item...">
+
+                <a href="#" class="form__search-link"><i class="form__search-icon fa fa-search"></i></a>
+
+            </form>
+
+            <div class="header__btn">
+
+                <button class="header__btn-link"><img src="images/wagon.svg" alt="btn-icon"
+                        class="header__btn-icon"></button>
+
+
+                <details>
+                    <summary class="btn btn-summary">
+                        My Account
+                    </summary>
+                    <div class="btn-content">content</div>
+                </details>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="menu__btn"><span></span></div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link">home</a>
+        <a href="product.html" class="nav__link nav__megamenue-open">man</a>
+        <a href="checkout.html" class="nav__link ">women</a>
+        <a href="shopping.html" class="nav__link">kids</a>
+        <a href="single-page.html" class="nav__link">accoseriese</a>
+        <a href="#" class="nav__link">featured</a>
+        <a href="product.html" class="nav__link">hot deals</a>
+        <div class="nav__megamenue">
+            <div class="nav__megamenue-left">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Blazers</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Denim</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Leggings/Pants</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Skirts/Shorts</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="nav__megamenue-center">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                </ul>
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                </ul>
+            </div>
+            <div class="nav__megamenue-right">
+                <p class="nav__subtitle">women</p>
+                <ul class="nav__megamenue-items">
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Dresses</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Tops</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Sweaters/Knits</a></li>
+                    <li class="nav__megamenue-list"><a href="#" class="nav__megamenue-link">Jackets/Coats</a></li>
+                </ul>
+                <img src="images/megamenue_img.png" alt="megamenue-img" class="nav__megamenue-img">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </nav>
+
+    <section class="arrivals">
+        <div class="container">
+            <div class="arrivals__inner">
+                <p class="arrivals__title">New Arrivals</p>
+                <div class="arrivals__crumbs">
+                    <a href="#" class="arrivals__crumbs-link">Home /</a>
+                    <a href="#" class="arrivals__crumbs-link">Men /</a>
+                    <span class="arrivals__crumbs-active">New Arrivals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="single-page-slider">
+
+            <div class="single-page-slider__items">
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+                <div class="single-page-slider__item">
+                    <div class="single-page-slider__bg"><img src="images/single_page__slider_img_1.png"
+                            class="single-page-slider__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="single-page-slider__inner">
+                    <div class="single-page-slider__description">
+
+                        <p class="single-page-slider__title">WOMEN COLLECTION</p>
+                        <p class="single-page-slider__subtitle">Moschino Cheap And Chic</p>
+                        <p class="single-page-slider__info">Compellingly actualize fully researched processes before
+                            proactive
+                            outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                            services.
+                            Completely visualize parallel core competencies rather than exceptional portals.</p>
+                        <div class="single-page-slider__specification">
+                            <article class="single-page-slider__specification-item">
+                                <span class="single-page-slider__material">material:</span> <span
+                                    class="single-page-slider__material-info">cotton</span>
+                            </article>
+                            <article class="single-page-slider__specification-item">
+                                <span class="single-page-slider__designer">designer:</span>
+                                <span class="single-page-slider__designer-info">binburhan</span>
+                            </article>
+                        </div>
+                        <p class="single-page-slider__price">$561</p>
+                        <div class="single-page-slider__options">
+
+                            <div class="single-page-slider__options-color">
+                                <p class="single-page-slider__options-title">CHOOSE COLOR</p>
+                                <select class="single-page-slider__color-select">
+                                    <option class="single-page-slider__color">red</option>
+                                    <option class="single-page-slider__color">green</option>
+                                    <option class="single-page-slider__color">brown</option>
+                                    <option class="single-page-slider__color">black</option>
+                                    <option class="single-page-slider__color">pink</option>
+                                    <option class="single-page-slider__color">blue</option>
+                                </select>
+                            </div>
+                            <div class="single-page-slider__options-size">
+                                <p class="single-page-slider__options-title">CHOOSE SIZE</p>
+                                <select class="single-page-slider__size-select">
+                                    <option class="single-page-slider__size">xxl</option>
+                                    <option class="single-page-slider__size">xl</option>
+                                    <option class="single-page-slider__size">l</option>
+                                    <option class="single-page-slider__size">m</option>
+                                    <option class="single-page-slider__size">s</option>
+                                    <option class="single-page-slider__size">xs</option>
+                                </select>
+                            </div>
+                            <div class="single-page-slider__options-quantity">
+                                <p class="single-page-slider__options-title">QUANTITY</p>
+                                <input class="single-page-slider__quantity" type="text" placeholder="2">
+                            </div>
+
+                        </div>
+                        <button class="single-page-slider__btn"><span class="single-page-slider__btn-text">Add to
+                                Cart</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="single-page-wordcard">
+
+            <div class="container">
+                <p class="single-page-wordcard__title">you may like also</p>
+                <div class="single-page-wordcard__inner">
+                    <a class="single-page-wordcard__link" href=" #">
+                        <figure class="single-page-wordcard__item">
+                            <img src="images/single-page-card-1.png" alt="">
+                            <figcaption>
+                                <p class="single-page-wordcard__name">BLAZE LEGGINGS</p>
+                                <p class="single-page-wordcard__price">$52.00</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="single-page-wordcard__link" href="#">
+                        <figure class="single-page-wordcard__item">
+                            <img src="images/single-page-card-4.png" alt="">
+                            <figcaption>
+                                <p class="single-page-wordcard__name">BLAZE LEGGINGS</p>
+                                <p class="single-page-wordcard__price">$52.00</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="single-page-wordcard__link" href="#">
+                        <figure class="single-page-wordcard__item">
+                            <img src="images/single-page-card-3.png" alt="">
+                            <figcaption>
+                                <p class="single-page-wordcard__name">BLAZE LEGGINGS</p>
+                                <p class="single-page-wordcard__price">$52.00</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="single-page-wordcard__link" href="#">
+                        <figure class="single-page-wordcard__item">
+                            <img src="images/single-page-card-4.png" alt="">
+                            <figcaption>
+                                <p class="single-page-wordcard__name">BLAZE LEGGINGS</p>
+                                <p class="single-page-wordcard__price">$52.00</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="review review__inner">
+        <div class="review__wrapper">
+            <!-- <img src="images/review_bg.png" alt="review-bg" class="review__bg"> -->
+            <div class="container review__content">
+
+                <div class="review__slider">
+
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                    <div class="review__slider-item-1">
+
+                        <p class="review__slider-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="review__slider-name">Bin Burhan</p>
+                        <span>Dhaka, Bd</span>
+
+                    </div>
+                </div>
+
+                <div class="review__form">
+
+                    <h3 class="review__form-title">Subscribe</h3>
+
+                    <p class="review__form-text">FOR OUR NEWLETTER AND PROMOTION</p>
+
+                    <form class="review__form-input">
+                        <input type="email" class="review__input" placeholder="Enter Your Email">
+                        <button class="review__subscribe">Subscribe</button>
+                    </form>
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+
+                    <a class="site-logo" href="#"><img src="images/logo.svg" alt="logo" class="logo">
+                        <span class="logo-text">BRAN<span>D</span></span>
+                    </a>
+
+                    <p class="footer__text">
+                        <span class="footer__description">Objectively transition extensive data rather than cross
+                            functional
+                            solutions.
+                            Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array
+                            of
+                            processes and cross-unit partnerships.</span> Efficiently plagiarize 24/365 action items and
+                        focused
+                        infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically
+                        optimize.
+                    </p>
+
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">COMPANY</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Home</a>
+                        <a href="#" class="footer__link">Shop</a>
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">How It Works</a>
+                        <a href="#" class="footer__link">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">INFORMATION</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Tearms & Condition</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">How to Buy</a>
+                        <a href="#" class="footer__link">How to Sell</a>
+                        <a href="#" class="footer__link">Promotion</a>
+                    </nav>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">SHOP CATEGORY</div>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__link">Men</a>
+                        <a href="#" class="footer__link">Women</a>
+                        <a href="#" class="footer__link">Child</a>
+                        <a href="#" class="footer__link">Apparel</a>
+                        <a href="#" class="footer__link">Brows All</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__inner">
+                    <div class="footer__copy">© 2017 Brand All Rights Reserved.</div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="footer__social-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="footer__social-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="footer__social-pinterest"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="#" class="footer__social-google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

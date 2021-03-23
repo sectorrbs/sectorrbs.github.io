@@ -1,0 +1,51 @@
+// main:../../style.less
+
+.single-page-wordcard {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 73px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        transition: .5s;
+        max-width: 261px;
+
+        &:hover {
+            transform: scale(1.04);
+            transition: .5s;
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #6f6e6e;
+        margin: 15px 0 0 15px;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @red;
+        margin: 15px 0 21px 15px;
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #4d4d4d;
+        margin: 0 auto 72px;
+        text-align: center;
+    }
+}

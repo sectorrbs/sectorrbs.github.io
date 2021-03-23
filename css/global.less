@@ -1,0 +1,215 @@
+// main:style.less
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 0 5px;
+}
+
+.btn {
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    background-color: @red;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    margin-left: 13px;
+
+    span {
+        font-weight: 900;
+        color: #f16d7f;
+    }
+}
+
+.wordcard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+    &__item {
+        width: 263px;
+        height: 364px;
+        background-color: #ffffff;
+        position: relative;
+        transition: .5s;
+        margin: 20px 0 20px;
+
+        &:hover {
+            transform: scale(1.04);
+            transition: .5s;
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+            .wordcard__bg {
+                opacity: 1;
+                transition: .5s;
+            }
+        }
+    }
+
+    &__pic {
+        width: 100%;
+    }
+
+    &__bg {
+        width: 100%;
+        height: 281px;
+        background-color: rgba(58, 56, 56, 0.83);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: .5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: transparent;
+        width: 123px;
+        height: 39px;
+        border: 1px solid #ffffff;
+        padding-left: 29px;
+        position: relative;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: scale(.97);
+            background-color: rgba(white, .2);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 23px;
+            height: 22px;
+            background-image: url(../images/wagon_fetured_icon.png);
+            left: 8px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__btn-reset,
+    &__btn-like {
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: transparent;
+        width: 57px;
+        height: 38px;
+        border: 1px solid #ffffff;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: scale(.97);
+            background-color: rgba(white, .2);
+        }
+    }
+
+    &__btn-like.wordcard__btn-like--active {
+        background-color: red;
+    }
+
+    &__btn-reset.wordcard__btn-reset--active {
+        background-color: blue;
+    }
+
+
+
+
+    &__btn-reset {
+        left: 70px;
+        top: 145px;
+    }
+
+    &__btn-like {
+        left: 136px;
+        top: 145px;
+    }
+
+    &__name {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 19px 0 0 14px;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @red;
+        margin: 17px 0 0 14px;
+    }
+}
+
+.add-to-cart {
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+.product .wordcard .wordcard__link {
+    display: block;
+    margin-bottom: 49px;
+}

@@ -1,0 +1,50 @@
+// main:../../style.less
+
+.introduce {
+    &__item {
+        margin-bottom: 98px;
+        height: 665px;
+        background-image: url(../images/slider_bg.png);
+        background-position: center;
+    }
+
+    &__text {
+        width: 520px;
+        margin-top: 255px;
+        padding-left: 24px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            background-color: @red;
+            width: 12px;
+            height: 92px;
+        }
+    }
+
+    &__text-big {
+        display: block;
+        font-size: 60px;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: #222222;
+        line-height: 1.2;
+    }
+
+    &__text-small {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+    }
+
+    &__text-red {
+        font-size: 40px;
+        color: #f16d7f;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        padding-left: 6px;
+    }
+}

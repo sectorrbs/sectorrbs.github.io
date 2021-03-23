@@ -1,0 +1,211 @@
+// main:../../style.less
+
+.accordeon {
+    margin: 89px 0 93px;
+
+    &__content {
+        display: none;
+        margin-top: 19px;
+        padding-left: 35px;
+    }
+
+    &__content-column {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__check {
+        -webkit-appearance: none;
+        position: absolute;
+    }
+
+
+    &__check:checked~.accordeon__content {
+        display: flex;
+    }
+
+
+
+    &__title {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__title-name {
+        padding: 20px 0;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #f5f5f5;
+        transition: background .5s;
+
+        &:hover {
+            transition: background .5s;
+            background-color: #e0dcdc;
+        }
+    }
+
+    &__check:checked~.accordeon__title .accordeon__title-name {
+        border: none;
+    }
+
+    &__content-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+        margin-bottom: 15px;
+    }
+
+    &__content-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        color: #b3b2b2;
+        margin-bottom: 34px;
+    }
+
+    &__radio-name {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222222;
+        margin-left: 22px;
+        cursor: pointer;
+    }
+
+
+    &__radio-box {
+        display: block;
+        position: relative;
+
+        &:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 33px;
+        }
+    }
+
+    &__radio-style {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+
+    &__radio {
+        -webkit-appearance: none;
+
+        &:checked+.accordeon__radio-style::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: @red;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__content-link {
+        font-size: 12px;
+        font-weight: 400;
+        color: #b3b2b2;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 180px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        transition: background .5s;
+        margin: 23px 0 79px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: darken(white, 5%);
+            transition: background .5s;
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+    }
+
+    &__email-adress,
+    &__content-pass {
+        font-size: 12px;
+        font-weight: 700;
+        color: #222222;
+        margin-bottom: 16px;
+
+        span {
+            font-size: 17px;
+
+            font-weight: 400;
+            color: #ff0d0d;
+        }
+    }
+
+    &__content-input {
+        width: 100%;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        margin-bottom: 21px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__content-note {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ff0d0d;
+    }
+
+    &__content-forgot-pass {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #222222;
+        margin-left: 32px;
+    }
+
+    &__content-right {
+        .accordeon__btn {
+            margin-bottom: 0;
+        }
+
+        .accordeon__content-subtitle {
+            margin-bottom: 27px;
+        }
+
+        .accordeon__btn {
+            padding-right: 25px;
+        }
+    }
+}
+
+.fa-angle-double-right {
+    margin-right: 10px;
+}
